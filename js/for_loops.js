@@ -1,5 +1,6 @@
 "use strict";
 
+
 // Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for that number (just multiply by the numbers 1 through 10)
 //
 // For example, showMultiplicationTable(7) should output
@@ -18,13 +19,68 @@
 // alert(showMultiplicationTable(7)
 
 //function showMultiplicationTable(x) {
-let i = 1
+// let i = 1
+//
+//         while (i < 11){
+//         console.log("7" + " x "  + i + " = " + (7 * i));
+//         i++;
 
-        while (i < 11){
-        console.log("7" + " x "  + i + " = " + (7 * i));
-        i++;
-}
 
+// Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even. For example:
+
+// 123 is odd
+// 80 is even
+// 24 is even
+// 199 is odd
+// ...
+
+
+//
+// function getRndInteger(min, max) {
+//
+//     var Math.floor(Math.random() * (max - min + 1)) + min;
+//
+//     for (let i = 0; i <= 10; i++) {
+//
+//         let number = getRndInteger(20, 200);
+//         if (number % 2 === 0) {
+//             console.log(number + " is even");
+//         } else {
+//             console.log(number + " is odd");
+//         }
+//     }
+// }
+
+//Create a for loop that uses console.log to create the output shown below.
+//1
+// 22
+// 333
+// 4444
+// 55555
+// 666666
+// 7777777
+// 88888888
+// 999999999
+
+// function numberPyramid(){
+//     var totalRows = 9;
+//
+//     for (let i = 1; i<= 11; i++){
+
+
+
+var output;
+
+    for (let i = 1; i <= 9; i++) {
+
+        output = "";
+
+        for (let j = 1; j <= i; j++) {
+        output += i;
+    }
+        console.log(output);
+
+    }
 
 
 
