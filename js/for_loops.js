@@ -15,15 +15,16 @@
 // 7 x 9 = 63
 // 7 x 10 = 70
 
-//(showMultiplicationTable(7))
+// alert(showMultiplicationTable(7)
 
+//function showMultiplicationTable(x) {
+let i = 1
 
-
-let i = 1;
-
-    while (i < 11){
-        console.log('while loop iteration#' * 7);
+        while (i < 11){
+        console.log("7" + " x "  + i + " = " + (7 * i));
         i++;
-    }
+}
+
+
 
 
