@@ -28,7 +28,7 @@ let totalFacebook = prompt("Hey, you're working hard - how many hours did you wo
 let sumGoogle = googlePay * totalGoogle; //could create a variable to get the total?
 //could also do it LIVE in the alert:
 
-alert("Cool beans - here's what I'm seeing, you will earn $" + sumGoogle + "from working at Google. You'll earn $" + (totalAmazon * amazonPay) + "from Amazon. Finally, you'll earn $" + (totalFacebook * facebookPay) + "from Facebook! Good job!");
+alert("Cool beans - here's what I'm seeing, you will earn $" + sumGoogle + "from working at Google. You'll earn $ " + (totalAmazon * amazonPay) + "from Amazon. Finally, you'll earn $" + (totalFacebook * facebookPay) + "from Facebook! Good job!");
 
 
 //A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with her current schedule.
