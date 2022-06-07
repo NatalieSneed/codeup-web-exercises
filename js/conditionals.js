@@ -89,8 +89,8 @@
 // ii. take the users color to 'analyzeColor' function
 // iii. alert the return value & show
 
- prompt("Would you please tell me your favorite color? ")
-
+ // prompt("Would you please tell me your favorite color? ")
+//
 //
 // /* ########################################################################## */
 //
@@ -161,8 +161,8 @@
  //            break;
   //   }
 
-     }
-
+     // }
+//
 
 
 
@@ -236,7 +236,7 @@
 //      alert("Your number was even ")
 //  }else
 
- }
+ // }
 
 
 
