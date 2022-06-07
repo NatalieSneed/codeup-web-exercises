@@ -62,25 +62,57 @@
 // 88888888
 // 999999999
 
-// function numberPyramid(){
-//     var totalRows = 9;
+
+
+// var output;
 //
-//     for (let i = 1; i<= 11; i++){
+//     for (let i = 1; i <= 9; i++) {
+//
+//         output = "";
+//
+//         for (let j = 1; j <= i; j++) {
+//         output += i;
+//     }
+//         console.log(output);
+
+    // }
+
+//Create a for loop that uses console.log to create the output shown below.
+
+//100
+// 95
+// 90
+// 85
+// 80
+// 75
+// 70
+// 65
+// 60
+// 55
+// 50
+// 45
+// 40
+// 35
+// 30
+// 25
+// 20
+// 15
+// 10
+// 5
+
+    // let x;
+    //
+    // for ( let i = 1; i >= 100; i++){
+    //    x = i -= 5
+    //
+    //     console.log(output);
+
+    // }
 
 
 
-var output;
+for (let i = 100; i >= 5; i-=5) {
 
-    for (let i = 1; i <= 9; i++) {
+    console.log(i);
 
-        output = "";
-
-        for (let j = 1; j <= i; j++) {
-        output += i;
-    }
-        console.log(output);
-
-    }
-
-
-
+}
