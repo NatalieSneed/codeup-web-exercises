@@ -55,8 +55,8 @@
 //iii. return boolean
 //iv. boolean  modified on T/F whether num === 2
 
-//CODE. function isTwo(num){
-//  return num === 2;
+CODE. function isTwo(num){
+ return num === 2;
 // }
 // console.log(isTwo(random))
 

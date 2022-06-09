@@ -1,12 +1,5 @@
-"use strict";
-
 /**
  * Write your solutions here.
- function isTrue(){
-    return true;
- if (isTrue() === true);
-console.log(isTrue);
- }
 
  * **Note**: While normally it is good practice to wrap your javascript in an
  * immediately invoked function expression (iife), you should _not_ do that
@@ -26,4 +19,26 @@ console.log(isTrue);
  * concat
  */
 
+function isTrue(x) {
+    return x === true;
+}
 
+function isFalse(x){
+    return x === false;
+}
+
+function not(x) {
+    return !x;
+}
+
+function addOne(x){
+    return  x++;
+}
+function isEven(x){
+    return x % 2;
+}
+function isIdentical{
+     return ;
+}
+
+}
