@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+<!--
+
+Create a file named forms.html.
+
+Using what you have learned in the previous lessons, add the necessary HTML document structure to the page with a title of: "Register With Us".
+
+Create an empty form element. We will be adding to this throughout the exercise.
+
+Below is an example of using the Request Inspector.
+
+<form method="POST" action="https://request-inspector.glitch.me/">
+
+Create text fields for email and password with appropriate placeholder values.
+
+Create a textarea named "bio". This is for the user to fill out a short description of themselves.
+-->
+
+    <br>
+    <br>
+<form method="GET" action="https://request-inspector.glitch.me">
+
+    <input type="text" name="email" placeholder="Enter your email address">
+    &nbsp;&nbsp;&nbsp;
+    <input type="password" name="password" placeholder="Enter your password">
+
+    <br>
+    <br>
+
+<!--Create a textarea named "bio". This is for the user to fill out a short description of themselves.-->
+
+    <br>
+    <textarea name="bio" placeholder="tell us a little about yourself" ></textarea>
+    <br>
+<!--    Create a "How did you hear about us" section that contains radio buttons. The values should be "billboard", "radio advertisement", "internet advertisement", and "other". Only one of the values should be allowed to be selected at a time.-->
+        <br>
+    <input name="How did you hear about us?" value="false" type="checkbox" checked>How did you hear about us
+    <br>
+    <br>
+
+    <br>
+    A <input type="radio" name="quiz_question_1" value="billboard"><br>
+    B <input type="radio" name="quiz_question_1" value="radio advertisement"><br>
+    C <input type="radio" name="quiz_question_1" value="internet advertisement"><br>
+    D <input type="radio" name="quiz_question_1" value="other"><br>
+
+    <br>
+    <br>
+
+<!--
+
+    Create a dropdown that asks the user what web browser they are using.
+
+    As you work through the steps above, you should:
+        Make sure all of your form elements have labels.
+        Make sure there's a way to submit the form, adding a submit button will solve this.
+        Ensure that all of your form values are being submitted to the Request Inspector.
+        Experiment with different attribute values:
+            What do you notice when changing the form's request method from GET to POST?
+            What happens if you leave off the name attribute on an input?
+            What happens if you leave off the id attribute on a form input?
+        Finally, commit the changes to your git repository, and push to GitHub.
+
+-->
+    <span>Which web browser are you using?</span>
+    <select name="What web browser are you using? ">
+        <option value="Chrome">Chrome</option>
+        <option value="Safari">Safari</option>
+        <option value="Firefox">Firefox</option>
+    </select>
+        <br>
+        <br>
+    <input type="submit">
+    <br>
+    <br>
+    <button type="submit">Submit the form</button>
+
+
+</form>
+
+
+
+
+</body>
+</html>
