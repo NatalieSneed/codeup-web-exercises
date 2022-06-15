@@ -1,8 +1,8 @@
 
     "use strict";
 
-    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    // var planetsArray;
+    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    var planetsArray;
 
     /**
      * TODO:
@@ -10,27 +10,34 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-// let planetsString = ["Mercury" , "Venus " ," Earth " , " Mars " , "Jupiter " , " Saturn " , "Uranus " , "Neptune"];
+    planetsArray = planetString.split("|")
+    console.log(planetsArray);
+
+    // let planetsString = ["Mercury" , "Venus " ," Earth " , " Mars " , "Jupiter " , " Saturn " , "Uranus " , "Neptune"];
 //
 // console.log(planetsString)
 
-    /**
-     * TODO:
-     * Create a string with <br> tags between each planet. console.log() your
-     * results. Why might this be useful?
-     *
-     * BONUS:
-     * Create another string that would display your planets in an undordered
-     * list. You will need an opening AND closing <ul> tags around the entire
-     * string, and <li> tags around each planet.
-     */
-//
+
+
+
+//TODO:
+// Create a string with <br> tags between each planet. console.log() your
+// results. Why might this be useful?
 // })
-//
+
+    let breaktagPlanets.join("<br>")
+        console.log(breaktagPlanets);
+
 // let planetsString = "Mercury <br> Venus  <br>  Earth  <br> Mars <br> Jupiter <br> Saturn <br> Uranus <br> Neptune";
 // document.write(planetsString)
 //     console.log(planetsString);
 
-    let planetsString = "<ul> <li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter<li>Saturn</li><li>Uranus</li> </ul>" ;
-    document.write(planetsString)
-        console.log(planetsString);
+    // *
+    // * BONUS:
+    //     * Create another string that would display your planets in an undordered
+    // * list. You will need an opening AND closing <ul> tags around the entire
+    // * string, and <li> tags around each planet.
+    // */
+    // let planetsString = "<ul> <li>Mercury</li><li>Venus</li><li>Earth</li><li>Mars</li><li>Jupiter<li>Saturn</li><li>Uranus</li> </ul>" ;
+    // document.write(planetsString)
+    //     console.log(planetsString);

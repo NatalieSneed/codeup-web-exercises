@@ -17,28 +17,6 @@
  * or
  * and
  * concat
- */
+ **/
 
-function isTrue(x) {
-    return x === true;
-}
-
-function isFalse(x){
-    return x === false;
-}
-
-function not(x) {
-    return !x;
-}
-
-function addOne(x){
-    return  x++;
-}
-function isEven(x){
-    return x % 2;
-}
-function isIdentical{
-     return ;
-}
-
-}
+function isTrue(x)

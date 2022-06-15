@@ -23,8 +23,8 @@
 //       */
 
  // var names = ["Tex" , "Tye" , "Stank" , "DooDoo"];
- // console.log(names[0]);
- // console.log(names[1]);
+ // console.log(names[2]);
+ // console.log(names[3]);
  // console.log(names[2]);
  // console.log(names[3]);
 
@@ -36,7 +36,7 @@
 //      * Write some code that uses a for loop to log every item in the names
 //      * array.
 //      */
-// for(let i = 0; i < 4; i++) {
+// for(let i = 0; i < names.length; i++) {
 //     console.log("Who ya got? " + names[i]);
 // }
 //
@@ -44,8 +44,8 @@
 //      * TODO:
 //      * Refactor your above code to use a `forEach` loop
 //      */
-// names.forEach(function(names){
-//     console.log(names);
+// names.forEach(function(name, index){
+//     console.log(name);
 //
 // })
 //     /**
@@ -62,17 +62,9 @@
 //      *  > last([1, 2, 3, 4, 5]) // return 5
 //      */
 //
-// var allTeam = ["Kobe" , " Magic" , " Bird" , " Luka " , " Steph"];
-//    function firstPlayer(allTeam){
-//        console.log(allTeam[0]);
-//  }
-//
-//     function secondPlayer(allTeam){
-//        console.log(allTeam[1]);
-//     }
-//
-//     function fifthPlayer(allTeam){
-//        console.log(allTeam[4]);
+
+
+    console.log(The first element was " + first(names))
 //     }
 
  let spaces = ['one ', 'two ', 'three', 'four ', 'five'];
