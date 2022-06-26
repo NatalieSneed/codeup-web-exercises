@@ -1,82 +1,140 @@
-@media screen and (max-width: 524px) {
+@media screen and (min-width: 525px) {
+
     * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+
     }
 
+    .hidden-on-desktop {
+        list-style: none;
+        text-decoration: none;
+        visibility: hidden;
+    }
 
-    body {
-        color: black;
-        font-family: Futura;
-        display: flex;
-        flex-direction: column;
+    nav {
+        padding-bottom: 2em;
+        justify-content: flex-end;
         margin: 0;
-    }
-
-    footer {
-        display: flex;
-        padding-top: 10em;
-        margin-bottom: 0;
-        margin-top: 3em;
-        flex-basis: 25%;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    img {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        height: 339px;
-        width: 100%;
     }
 
     h1 {
         display: flex;
-        font-size: 3em;
+        padding: 0;
+        margin: 0 auto;
+        justify-content: flex-start;
+        float: left;
         align-items: center;
-        justify-content: center;
-        color: black;
-        margin: 0;
-        padding: .5em;
     }
 
-    h2 {
-        margin-bottom: .5em;
+    img {
+        display: flex;
+        height: 385px;
+        width: 675px;
+        margin-bottom: 3em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     li {
-        background-color: lightgray;
-        padding: 1em;
-        margin: .4em;
-        justify-content: flex-end;
-
+        padding: 0;
+        margin: 0;
+        /*background-color: white;*/
     }
 
-    a {
-        color: blue;
+
+    footer {
         display: flex;
-        justify-content: space-evenly;
+        font-size: 1em;
+        justify-content: space-between;
+        align-items: flex-end;
+        clear: both;
     }
 
-    .alert-info {
-        text-decoration: none;
+
+    nav .nav-links {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+
+    .main {
+        float: left;
+        width: calc(65% - 1em);
+        padding: 1em;
+    }
+
+    .sub-section {
+        font-style: italic;
+        float: right;
+        width: calc(35% - 1em);
+        padding: 1em;
+    }
+
+    .header-img {
+        display: flex;
         align-items: center;
         justify-content: center;
-        padding: 2em;
+    }
+
+    footer .fa {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: small;
+        text-decoration: none;
+    }
+}
+
+    .alert-info {
+
+        display: flex;
+        background-color: #bef6f0;
+        border: 1px solid grey;
+        justify-content: center;
+        align-items: center;
+        height: 3em;
+        margin: auto;
+        font-size: 1em;
+    }
+
+
+    ul {
+        list-style: none;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+        margin: .5em 0;
+        justify-content: space-around;
+        width: 95%;
+        height: 2.5em;
+        align-items: center;
+        font-size: 1em;
     }
 
     .alert-info a {
-        background-color: #CCFFFF;
         text-decoration: none;
         color: black;
-        padding: 1em 0;
-        border: .1em solid lightgray;
     }
 
-    .hidden-on-desktop {
-        /*list-style: none;*/
-        text-decoration: none;
+    h1 {
+        text-align: center;
+        font-size: 3em;
+        margin: 10px auto;
+    }
+
+    .header-img {
+        display: flex;
+        flex-direction: column;
     }
 
     .nav-links {
@@ -86,14 +144,21 @@
         justify-content: flex-end;
     }
 
-    .main {
-        margin-bottom: 2em;
-    }
+        a {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .main {
+            text-align: left;
+            margin-left: 2.5em;
+            width: 60%;
+            float: left;
+        }
 
     .sub-section {
         font-style: italic;
     }
-}
+
 
 
 
