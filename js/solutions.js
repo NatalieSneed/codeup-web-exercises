@@ -19,4 +19,3 @@
  * concat
  **/
 
-function isTrue(x)
