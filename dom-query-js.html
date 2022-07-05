@@ -58,11 +58,11 @@
                 dataBlue.style.color = 'blue';
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.querySelectorAll('class');
+        const subParagraphs = document.getElementsByClassName('sub-paragraph');
             console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-
+            subParagraphs[0].innerText = 'Mission Accomplished!';
     })();
 </script>
 </body>
