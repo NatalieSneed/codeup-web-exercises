@@ -19,8 +19,9 @@
      */
 
     console.log('Adding "The Sun" to the beginning of the planets array.');
-    console.log(planets);
     planets.unshift('The Sun');
+    console.log(planets);
+
 
     console.log('Adding "Pluto" to the end of the planets array.');
     console.log(planets);
@@ -36,8 +37,8 @@
 
 
     console.log('Finding and logging the index of "Earth" in the planets array.');
-    console.log("Where's the earth: ? + planets.indexOf("Earth");
-    console.log("Here's the lastIndexOf finding the Earth " + planets.lastIndexOf("Earth");
+    console.log("Where's the earth: ?" + planets.indexOf("Earth"));
+    console.log("Here's the lastIndexOf finding the Earth " + planets.lastIndexOf("Earth"));
 
     console.log("Reversing the order of the planets array.");
     planets.reverse();
