@@ -24,46 +24,75 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
+<button id="button1">Button 1</button>
+<button id="button2">Button 2</button>
+<button id="button3">Button 3</button>
+<button id="button4">Button 4</button>
 
 <script>
+
     (function() {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = document.getElementById('main-header');
-        console.log(mainHeader);
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
-        console.log(mainHeader.innerHTML);
+        function f1() {
+            // TODO: Uncomment next line and get the main header element by id
+            var mainHeader = document.getElementById('main-header');
+            console.log(mainHeader);
 
-        // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById('sub-header');
-            console.log(subHeader);
 
-        // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue';
+            // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+            mainHeader.innerHTML = "JavaScript is Cool";
+            console.log(mainHeader.innerHTML);
+        }
 
-        // TODO: Uncomment the next line and get all list items
-        var listItems = document.querySelectorAll('li');
+            function f2() {
+
+                // TODO: Uncomment the next line and get the sub header element by id
+                var subHeader = document.getElementById('sub-header');
+                console.log(subHeader);
+
+                // TODO: Set the text color of subHeader to blue
+                subHeader.style.color = 'blue';
+            }
+
+        function f3() {
+            // TODO: Uncomment the next line and get all list items
+            var listItems = document.querySelectorAll('li');
             console.log(listItems);
 
-        // TODO: Set text color on every other list item to grey
-            for (let i=0; i < listItems.length; i += 2) {
+            // TODO: Set text color on every other list item to grey
+            for (let i = 0; i < listItems.length; i += 2) {
 
-                    listItems[i].style.color = "#CCCCCC";
-
+                listItems[i].style.color = "#CCCCCC";
             }
-        // TODO: Set text color of li with dbid = 1 to blue
-            var dataBlue = document.getElementsByTagName('li')[0];
+
+            function f4() {
+
+                // TODO: Set text color of li with dbid = 1 to blue
+                var dataBlue = document.getElementsByTagName('li')[0];
                 dataBlue.style.color = 'blue';
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        const subParagraphs = document.getElementsByClassName('sub-paragraph');
-            console.log(subParagraphs);
+                // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+                const subParagraphs = document.getElementsByClassName('sub-paragraph');
+                console.log(subParagraphs);
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-            subParagraphs[0].innerText = 'Mission Accomplished!';
+                // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+                subParagraphs[0].innerText = 'Mission Accomplished!';
+            }
+        }
+        const button1 = document.querySelector("#button1");
+        button1.addEventListener("click", f1);
+
+        const button2 = document.getElementById("button2");
+        button2.addEventListener("click", f2);
+
+        const button3 = document.getElementById("button3");
+        button3.addEventListener("click", f3);
+
+        const button4 = document.getElementById("button4");
+        button4.addEventListener("click", f4);
+
     })();
 </script>
+
 </body>
-</html>

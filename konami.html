@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=""utf-8>
+    <title>Konami Code</title>
+
+
+</head>
+<body>
+    <h1 style="color: blueviolet;">Contra Time</h1>
+
+<script>
+    "use strict";
+
+    const body = document.querySelector("body");
+    body.addEventListener("keyup", logKey);
+
+    let keyString = "";
+    let contraCode = new RegExp("ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter");
+    function logKey(keyEvent) {
+        keyString += keyEvent.key;
+        console.log(keyString);
+        if(contraCode.test(keyString)) {
+            alert("You got dat code");
+        }else{
+            alert("TRY AGAIN!")
+
+        }
+
+    }
+
+
+
+
+
+
+        // <input type="text" class="form-control" placeholder="Search" id="search_id"/>
+        // <script type="text/javascript">
+        //
+        //     const log = document.getElementById('search_id');
+        //     document.addEventListener('keyup', logKey);
+        //     function logKey(e) {
+        //     const value=log.value;
+        //     if (e.key === 'Enter' || e.keyCode === 13) {
+        //     transmit({search: value});
+        // }
+        // }
+    // });
+
+
+</script>
+</body>
+</html>
