@@ -16,19 +16,19 @@
 </head>
 <body>
 
-<h1>My First Mapbox Map!</h1>
+<h1>First Map Attack!</h1>
 
 <!-- The HTML element that serves as the Mapbox container -->
 <div id='map'></div>
 
-<button id="zoom-in">Zoom In</button>
+<button id="zoom-in">Zoom ZOOM</button>
 <button id="drop-marker">Drop Marker</button>
 
 <!-- Mapbox JS -->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
 <!-- Custom JS -->
-<script src="keys.js"></script>
+<script src="js/keys.js"></script>
 <script>
     (async function() {
 
@@ -75,7 +75,7 @@
             <div class="card">
     <h5 class="card-title bg">${locationInfo.address}</h5>
     <div class="card-body d-flex justify-content-center">
-        src = Restaurant phttps://www.google.com/maps/uv?pb=!1s0x876c78d1ba0d6a13:0x1a0b89031f1e9135!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipNMSVq-P2mn8KEem6qAbkzBC4zfagHis-kDoVRH%3Dw434-h290-k-no!5sstout+street+social+-+Google+Search!15zQ2dJZ0FRPT0&imagekey=!1e10!2sAF1QipNMSVq-P2mn8KEem6qAbkzBC4zfagHis-kDoVRH&hl=en&sa=X&ved=2ahUKEwjSiLyJq_n4AhVGtYQIHfdgBhMQoip6BAhiEAMicture goes here
+       
     </div>
     <div class="card-footer">${locationInfo.description}</div>
 `
@@ -117,19 +117,7 @@
             map.setZoom(currentZoom);
         });
 
-        // document.querySelector("#drop-marker").addEventListener("click", function (event) {
-        //     // add a popup to this
-        //     let popup = new mapboxgl.Popup();
-        //     popup.setLngLat([-98, 28])
-        //     popup.setHTML("<h1>Codeup Rocks!</h1><img src='assets/cthulhu.jpeg'>")
-
-            // let marker = new mapboxgl.Marker();
-
-            // marker.setPopup(popup);
-            // marker.setLngLat([-98, 28]);
-            // marker.addTo(map);
-
-        // });
+        
 
     })();
 
