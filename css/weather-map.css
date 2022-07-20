@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+.cardOne {
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 70%;
+    /*display: flex;*/
+    flex-direction: column;
+    border-color: #847477;
+
+}
+
