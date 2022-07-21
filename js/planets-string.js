@@ -25,7 +25,7 @@
 // results. Why might this be useful?
 // })
 
-    let breaktagPlanets.join("<br>")
+    let breaktagPlanetsjoin;
         console.log(breaktagPlanets);
 
 // let planetsString = "Mercury <br> Venus  <br>  Earth  <br> Mars <br> Jupiter <br> Saturn <br> Uranus <br> Neptune";
