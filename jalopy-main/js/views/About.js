@@ -45,6 +45,6 @@ export default function About(props) {
         document.querySelector("#about-text").innerText = "Hello World!";
     }
     // showNotification("Hey, a message!", "danger");
-    export function AboutEvents() {
+    export function aboutJSFunction() {
         document.querySelector("#change-about-text").addEventListener("click", changeAboutText);
 }

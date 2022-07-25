@@ -1,3 +1,53 @@
+*, *::before, *::after {
+    font-family: 'Mochiy Pop One', sans-serif;
+
+
+}
+.card {
+    background: #FFFFFF;
+    padding: 1rem;
+    border: 1px solid #777;
+    border-radius: .25rem;
+
+}
+.card-footer {
+    margin-top: 1rem;
+}
+.btn {
+
+    background: hsl(200, 50%,50%);
+    color: white;
+    border: none;
+    /*padding: .5em .75em;*/
+    font-size: 1rem;
+    border-radius: .25em;
+    cursor: pointer;
+}
+.btn:hover, .btn:focus{
+    background: hsla(200, 50%, 50%);
+}
 .jalopy-nav {
-    margin-right: 1em;
+    margin-right: 3em;
+}
+.home-title{
+    text-align: center;
+}
+body{
+    background-color: burlywood;
+}
+h1 {
+    font-style: oblique;
+    text-align: center;
+    /*background-color: darkcyan;*/
+    /*background-blend-mode: hue;*/
+}
+
+#home-img{
+    display: flex;
+
+    /*display: block;*/
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    align-items: center;
 }

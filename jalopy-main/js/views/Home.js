@@ -1,30 +1,44 @@
 import {showNotification} from "../messaging.js";
 import {getUser} from "../auth.js";
 
-const BASE_URI = `${BACKEND_HOST}/api/s3/download`;
+// const BASE_URI = `${BACKEND_HOST}/api/s3/download`;
 
-export default function Home(props) {
+const imagePaths = [
+    "assets/jalopy1.jpeg",
+    "assets/jalopy2.jpeg",
+    "assets/jalopy3.jpeg",
+    "assets/jalopy4.jpeg"
+
+]
+let currentImageIndex = 1;
+
+export default function homeHTMLFunction(props) {
     return `
         <header>
-            <h1>Home Page</h1>
+            <h1 class="home-title">Helloooo jalopy</h1>
         </header>
         <main>
             <div>
+                <img id="home-img" src="assets/jalopy1.jpeg">
+
                 <p>
-                    This is the home page text.
-                </p>    
+                    Welcome to My Jalopy APP
+                </p>
+                <button id="img-button">Click this</button>    
+                
             </div>
+           
         </main>
     `;
 }
-
-export function HomeEvents() {
-    // TODO: use an enum for message type
-    // const authority = getUserRole();
-    const user = getUser();
-    if(!user) {
-        showNotification("Welcome visitor", "secondary");
-    } else {
-        showNotification("Welcome " + user.userName, "info");
-    }
+export function homeJSFunction(){
+    const button = document.querySelector("#img-button");
+    button.addEventListener("click", function(event) {
+        const img = document.querySelector("#home-img");
+        img.setAttribute("src", imagePaths[currentImageIndex]);
+        currentImageIndex++;
+        if(currentImageIndex === 3) {
+            currentImageIndex = 0
+        }
+    })
 }

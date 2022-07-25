@@ -12,7 +12,7 @@ export default function Navbar(props) {
     html = html + `<a class="jalopy-nav" href="/about" data-link>About</a>`;
 
     // only logged in can see user info and logout
-    if(loggedIn) {
+    if (loggedIn) {
         html = html + `<a class="jalopy-nav" href="/users" data-link>User Info</a>
             <a href="/logout" data-link>Logout</a>`;
     } else {
@@ -20,7 +20,10 @@ export default function Navbar(props) {
         html = html + `<a class="jalopy-nav" href="/login" data-link>Login</a>
         <a class="jalopy-nav" href="/register" data-link>Register</a>`;
     }
-
-    html = html + `</nav>`;
+    html += `<a class="jalopy-nav" href="/dogs" data-link>Dog Facts</a>`;
+    html += `<a class="jalopy-nav" href="/quotes" data-link>Incredible Quotes</a>`;
+    html += `</nav>`;
     return html;
+
+
 }
